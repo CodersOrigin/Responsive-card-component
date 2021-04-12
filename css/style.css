@@ -1,0 +1,156 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+/* font family-------------- */
+
+:root{
+
+    --font1:'Big Shoulders Display';
+    --font2:'Lexend Deca', sans-serif;
+}
+
+
+
+.cont{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    padding: 4% 15%;
+    background-color: hsl(0, 0%, 95%);
+}
+
+
+/* 1st box color and button hover */
+
+.cbox1{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 15px 0 0 15px;
+}
+
+.cbox1 .btn:hover{
+    background-color: #ffffff;
+    color: hsl(31, 77%, 52%);
+    transition: all 0.6s ease;
+}
+
+
+/* 2nd box color and button hover */
+
+.cbox2{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.cbox2 .btn:hover{
+    background-color: #ffffff;
+    color: hsl(184, 100%, 22%);
+    transition: all 0.6s ease;
+}
+
+/* 3rd box color and button hover */
+
+.cbox3{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 15px 15px 0;
+}
+
+.cbox3 .btn:hover{
+    background-color: #ffffff;
+    color: hsl(179, 100%, 13%);
+    transition: all 0.6s ease;
+}
+
+.cardbox{
+    height: 550px;
+    text-align: left;
+    padding: 2% 2%;
+}
+
+
+
+/* paragraph, heading & button color & styling */
+
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: var(--font2);
+}
+
+h1,.btn{
+    color: hsl(0, 0%, 95%);
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: var(--font1);
+
+}
+
+.cardbox .btn{
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-family: var(--font2);
+    margin-top: 90px;
+
+}
+
+img,h1,p{
+    margin: 15px 0 20px 0;
+}
+
+
+
+/* media queries */
+
+
+@media screen and (min-width:1024px){
+
+    .cont{
+        padding: 4% 15%;
+    }
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+
+    .cont{
+        padding: 4% 10%;
+    }
+}
+
+@media screen and (max-width:767px){
+
+    .cont{
+        padding: 4% 8%;
+        height:auto;
+    }
+
+    .cbox1,.cbox2,.cbox3{
+        border-radius: 0px;
+    }
+
+    img,h1,p{
+        margin: 15px 0 15px 0;
+    }
+
+    .cardbox{
+        height: 350px;
+        padding: 2% 4%;
+    }
+
+    .cardbox .btn{
+        margin-top: 50px;
+    
+    }
+
+}
